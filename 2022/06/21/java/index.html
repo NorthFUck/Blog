@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en-ZN">
-
+  
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="java, 北雾诗人">
-    <meta name="description" content="">
+    <meta name="keywords" content="java, HTML,CSS,JavaScript,JQuery,Java,Mysql,Linux,Javaweb">
+    <meta name="description" content="专注与web，分享生活，分享知识">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
 
 
     <title>java | 北雾诗人</title>
-    <link rel="icon" type="image/png" href="/Blog/favicon.png">
+    <link rel="icon" type="image/jpeg" href="/Blog/North.jpg">
 
     <link rel="stylesheet" type="text/css" href="/Blog/libs/awesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="/Blog/libs/materialize/materialize.min.css">
@@ -29,11 +29,10 @@
 
     <script src="/Blog/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2"></head>
-
-
-
-   <style>
+<meta name="generator" content="Hexo 5.4.2">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+  <style>
     body{
        background-image: url(https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg);
        background-repeat:no-repeat;
@@ -41,10 +40,9 @@
        background-attachment:fixed;
     }
 </style>
+ 
 
-
-
-<body>
+  <body>
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
@@ -155,7 +153,7 @@
         <div class="logo-name">北雾诗人</div>
         <div class="logo-desc">
             
-            Never really desperate, only the lost of the soul.
+            专注与web，分享生活，分享知识
             
         </div>
     </div>
@@ -315,8 +313,7 @@
     </nav>
 
 </header>
-
-    
+ 
 
 
 
@@ -623,16 +620,16 @@
 <li><p>```java<br>package com.microsoft.demo; //定位你的Java代码放在src文件夹下的位置</p>
 <p>//公共的  类   类名（开头字母必须大写和文件名相同）<br>public class Main{ </p>
 <pre><code>//mian函数的固定格式
-public static void main(String[] args)&#123;
+public static void main(String[] args){
     
     //语句
-    System.out.println(&quot;Hello&quot;);
-&#125;
+    System.out.println("Hello");
+}
 
 //java函数
-public static int sum(int number_a,int number_b)&#123;
+public static int sum(int number_a,int number_b){
     return number_a+number_
-&#125;
+}
 //函数的调用和C是一样的
 </code></pre>
 <p>}</p>
@@ -641,11 +638,11 @@ public static int sum(int number_a,int number_b)&#123;
 
   - **基本注释**
     - 和C语言一样有单行注释和段落注释
-    - 单行注释 &#96;&#x2F;&#x2F; ……&#96;
-    - 多行注释 &#96;&#x2F;* ...... *&#x2F;&#96; 注释内容不会出现在javadoc 生成的文档中
+    - 单行注释 `// ……`
+    - 多行注释 `/* ...... */` 注释内容不会出现在javadoc 生成的文档中
   - **方法注释和类注释**
-    - 即文档注释 : &#x2F;** ...... *&#x2F; 注释内容写入javadoc生成的文档
-    - 注释格式&#x2F;** ...... *&#x2F;里面的内容有介绍函数，还有方法中用到的参数和返回值
+    - 即文档注释 : /** ...... */ 注释内容写入javadoc生成的文档
+    - 注释格式/** ...... */里面的内容有介绍函数，还有方法中用到的参数和返回值
     - 这个可以快速生成一个方法文档（想要生成文档可以在快捷键里查doc）
     - IntelliJ IDEA 里查看一个函数注释的方法是 ctrl+q
 
@@ -659,7 +656,7 @@ public static int sum(int number_a,int number_b)&#123;
 
   - **自动类型转换**
 
-    - &#96;&#96;&#96;java
+    - ```java
       低  ------------------------------------&gt;  高
       
       byte,short,char—&gt; int —&gt; long—&gt; float —&gt; double <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
@@ -682,14 +679,14 @@ public static int sum(int number_a,int number_b)&#123;
 
   - 格式：(type)value type是要强制类型转换后的数据类型 
 
-    - &#96;&#96;&#96;java
-      public class QiangZhiZhuanHuan&#123;
-          public static void main(String[] args)&#123;
-              int i1 &#x3D; 123;
-              byte b &#x3D; (byte)i1;&#x2F;&#x2F;强制类型转换为byte
-              System.out.println(&quot;int强制类型转换为byte后的值等于&quot;+b);
-          &#125;
-      &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+    - ```java
+      public class QiangZhiZhuanHuan{
+          public static void main(String[] args){
+              int i1 = 123;
+              byte b = (byte)i1;//强制类型转换为byte
+              System.out.println("int强制类型转换为byte后的值等于"+b);
+          }
+      }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ul>
 </li>
 </ul>
@@ -708,8 +705,8 @@ public static int sum(int number_a,int number_b)&#123;
 </thead>
 <tbody><tr>
 <td>初始化法</td>
-<td><code>int[ ] arr =&#123;1,2,3&#125;</code></td>
-<td><code>int arr [] = &#123;1,2,3&#125;</code></td>
+<td><code>int[ ] arr ={1,2,3}</code></td>
+<td><code>int arr [] = {1,2,3}</code></td>
 </tr>
 <tr>
 <td>分配空间法</td>
@@ -727,10 +724,10 @@ public static int sum(int number_a,int number_b)&#123;
 <li>```java<br>str.length();<br>arr.length;<pre class="line-numbers language-none"><code class="language-none">
 - 增强 for 循环
 
-  - &#96;&#96;&#96;java
-    for (int i: arr_2) &#123;
+  - ```java
+    for (int i: arr_2) {
          System.out.println(arr_2[i]);
-    &#125;
+    }
     <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ul>
 </li>
@@ -745,9 +742,9 @@ public static int sum(int number_a,int number_b)&#123;
 <li><p>如：sort() 排序</p>
 <ul>
 <li>```java<br>int[] arr_1 = {1, 2, 3, 6, 7, 8,111,1111,112,1235,123};<pre><code>    Arrays.sort(arr_1);
-    for (int element:arr_1) &#123;
-        System.out.print(element + &quot; &quot;);
-    &#125;
+    for (int element:arr_1) {
+        System.out.print(element + " ");
+    }
 </code></pre>
 <pre class="line-numbers language-none"><code class="language-none">
 #### 3.函数和方法
@@ -761,23 +758,23 @@ public static int sum(int number_a,int number_b)&#123;
 
 - 方法名相同，参数个数或这参数类型不同
 
-  - &#96;&#96;&#96;java
+  - ```java
     package com.microsoft.demo;
     import java.util.Arrays;
-    public class main &#123;
-        public static void main(String[] args) &#123;
-            int sum &#x3D; sum(1, 2);
-            double value &#x3D; sum(1.2 , 3.4);
-            System.out.println(&quot;sum &#x3D; &quot; + sum);
-            System.out.println(&quot;value &#x3D; &quot; + value);
-        &#125;
-        public static int sum (int x, int y)&#123;
+    public class main {
+        public static void main(String[] args) {
+            int sum = sum(1, 2);
+            double value = sum(1.2 , 3.4);
+            System.out.println("sum = " + sum);
+            System.out.println("value = " + value);
+        }
+        public static int sum (int x, int y){
             return x + y;
-        &#125;
-        public static double sum ( double x, double y)&#123;
+        }
+        public static double sum ( double x, double y){
             return x + y;
-        &#125;
-    &#125;
+        }
+    }
     <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ul>
 </li>
@@ -814,9 +811,9 @@ public static int sum(int number_a,int number_b)&#123;
 <li><p>但可以实现继承多个类 class A extends B，class C extends A 这样C就同时继承了B和A两个类了</p>
 <ul>
 <li>```java<br>public class Dogs extends Animal{<br>}<pre class="line-numbers language-none"><code class="language-none">
-- &#96;&#96;&#96;java
-  public class Labrador extends Dogs &#123;
-  &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
+- ```java
+  public class Labrador extends Dogs {
+  }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ul>
 </li>
 </ul>
@@ -825,7 +822,7 @@ public static int sum(int number_a,int number_b)&#123;
 </ul>
 <h3 id="2-封装"><a href="#2-封装" class="headerlink" title="2.封装"></a>2.封装</h3><ul>
 <li>封装的概念<ul>
-<li>将类的某些<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E4%BF%A1%E6%81%AF%E9%9A%90%E8%97%8F&spm=1001.2101.3001.7020">信息隐藏</a>在类的内部，不允许外部程序直接访问，而是通过该类提供的方法来对隐藏的信息进行操作和访问</li>
+<li>将类的某些<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E4%BF%A1%E6%81%AF%E9%9A%90%E8%97%8F&amp;spm=1001.2101.3001.7020">信息隐藏</a>在类的内部，不允许外部程序直接访问，而是通过该类提供的方法来对隐藏的信息进行操作和访问</li>
 </ul>
 </li>
 <li>封装的好处<ul>
@@ -834,7 +831,7 @@ public static int sum(int number_a,int number_b)&#123;
 </ul>
 </li>
 <li>封装的实现步骤<ul>
-<li>修改属性的可见性设为（<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=private&spm=1001.2101.3001.7020">private</a>）</li>
+<li>修改属性的可见性设为（<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=private&amp;spm=1001.2101.3001.7020">private</a>）</li>
 <li>创建getter/setter方法（用于属性的读写）（通过这两种方法对数据进行获取和设定，对象通过调用这两种发方法实现对数据的读写）</li>
 <li>在getter/setter方法中加入属性控制语句（对属性值的合法性进行判断）</li>
 </ul>
@@ -875,17 +872,17 @@ public static int sum(int number_a,int number_b)&#123;
 <h3 id="5-静态方法"><a href="#5-静态方法" class="headerlink" title="5.静态方法"></a>5.静态方法</h3><ul>
 <li><p>静态变量</p>
 <ul>
-<li>```java<pre><code>public static String plot =&quot;NanG&quot;;
+<li>```java<pre><code>public static String plot ="NanG";
 </code></pre>
 <pre class="line-numbers language-none"><code class="language-none">
     
 
 - 静态方法
 
-  - &#96;&#96;&#96;java
-        public static void goplot()&#123;
-            System.out.println(&quot;所有狗都进了小区&quot;);
-        &#125;
+  - ```java
+        public static void goplot(){
+            System.out.println("所有狗都进了小区");
+        }
     <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ul>
 </li>
@@ -909,34 +906,34 @@ public static int sum(int number_a,int number_b)&#123;
 private static Earth earthInstance = new Earth();
 
 //外部无法new新的Earth
-private Earth()&#123;
+private Earth(){
 
-&#125;
+}
 //Earth在外部得到Earth
-public static Earth getEarthInstance()&#123;
+public static Earth getEarthInstance(){
     return earthInstance;
-&#125;
+}
 </code></pre>
 <p>   public void showMessage(){</p>
-<pre><code>  System.out.println(&quot;Hello Earth!&quot;);
+<pre><code>  System.out.println("Hello Earth!");
 </code></pre>
 <p>   }<br>}</p>
 <pre class="line-numbers language-none"><code class="language-none">
-&#96;&#96;&#96;java
-public class main &#123;
-   public static void main(String[] args) &#123;
+```java
+public class main {
+   public static void main(String[] args) {
  
-      &#x2F;&#x2F;不合法的构造函数
-      &#x2F;&#x2F;编译时错误：构造函数 Earth() 是不可见的
-      &#x2F;&#x2F;Earth object &#x3D; new Earth();
+      //不合法的构造函数
+      //编译时错误：构造函数 Earth() 是不可见的
+      //Earth object = new Earth();
  
-      &#x2F;&#x2F;获取唯一可用的对象
-      Earth object &#x3D; Earth.getEarthInstance();
+      //获取唯一可用的对象
+      Earth object = Earth.getEarthInstance();
  
-      &#x2F;&#x2F;显示消息
+      //显示消息
       object.showMessage();
-   &#125;
-&#125;
+   }
+}
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 <li><p>运行结果</p>
 <ul>
@@ -957,12 +954,12 @@ public class main &#123;
 
 - 方法的重写只有在继承中才能实现
 
-  - &#96;&#96;&#96;java
+  - ```java
         @Override
-        public void breaking() &#123;
-    &#x2F;&#x2F;        super.breaking();
-            System.out.println(&quot;喵喵&quot;);
-        &#125;
+        public void breaking() {
+    //        super.breaking();
+            System.out.println("喵喵");
+        }
     <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ul>
 </li>
@@ -970,11 +967,11 @@ public class main &#123;
 </li>
 <li><p>```java</p>
 <pre><code>@Override
-public void breaking() &#123;
+public void breaking() {
 </code></pre>
 <p>//        super.breaking();</p>
-<pre><code>    System.out.println(&quot;汪汪&quot;);
-&#125;
+<pre><code>    System.out.println("汪汪");
+}
 </code></pre>
 <pre class="line-numbers language-none"><code class="language-none">
   - 动物叫，这是它自己拥有的特性，是他自己写的，不是来自他爸的，他从爸爸那革新了
@@ -1002,19 +999,19 @@ public void breaking() &#123;
 
 - ##### 方法也有重写，拿狗是否能导航来举例，Dogs类不加final结果：
 
-  - &#96;&#96;&#96;java
-        public boolean isGudieBlindness()&#123;
+  - ```java
+        public boolean isGudieBlindness(){
             return false;
-        &#125;
+        }
     <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ul>
 </li>
 <li><p>用final定义的变量是常理，而在命令规范中，常理必须大写，单词用下划线隔开</p>
 <ul>
-<li><pre><code class="java">    private static final String COMMUNITY_NAME =&quot;NanG&quot;;
-    public static String getCommunityName()&#123;
+<li><pre><code class="java">    private static final String COMMUNITY_NAME ="NanG";
+    public static String getCommunityName(){
         return COMMUNITY_NAME;
-    &#125;
+    }
 </code></pre>
 </li>
 <li><p>idea快捷键<br><code>ctrl +shift+u</code>一键大写<br><code>shift+f6</code>一键更改变量</p>
@@ -1358,7 +1355,7 @@ public void breaking() &#123;
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/Blog/2022/06/21/%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%AF%9E%E7%94%9F/">
+                <a href="/Blog/2022/06/21/bo-ke-de-dan-sheng/">
                     <div class="card-image">
                         
                         
@@ -1513,63 +1510,7 @@ public void breaking() &#123;
 </main>
 
 
-
-
-    <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/Blog/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/Blog/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
+ <footer class="page-footer bg-color">
     
     <div class="container row center-align" style="margin-bottom: 0px !important;">
         <div class="col s12 m8 l8 copy-right">
@@ -1644,9 +1585,7 @@ public void breaking() &#123;
 </footer>
 
 <div class="progress-bar"></div>
-
-
-    <!-- 搜索遮罩框 -->
+ <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">
     <div class="modal-content">
         <div class="search-header">
@@ -1749,14 +1688,15 @@ $(function () {
     searchFunc('/Blog/search.xml', 'searchInput', 'searchResult');
 });
 </script>
-
-    <!-- 回到顶部按钮 -->
+ <!-- 回到顶部按钮 -->
 <div id="backTop" class="top-scroll">
     <a class="btn-floating btn-large waves-effect waves-light" href="#!">
         <i class="fas fa-arrow-up"></i>
     </a>
 </div>
 
+
+    <script src="../source/js/click_show_text.js"></script>
 
     <script src="/Blog/libs/materialize/materialize.min.js"></script>
     <script src="/Blog/libs/masonry/masonry.pkgd.min.js"></script>
@@ -1766,8 +1706,7 @@ $(function () {
     <script src="/Blog/js/matery.js"></script>
 
     <!-- Baidu Analytics -->
-
-    <!-- Baidu Push -->
+ <!-- Baidu Push -->
 
 <script>
     (function () {
@@ -1782,40 +1721,46 @@ $(function () {
         s.parentNode.insertBefore(bp, s);
     })();
 </script>
-
+ 
+    <script
+      src="/Blog/libs/others/clicklove.js"
+      async="async"
+    ></script>
+     
+    <script
+      async
+      src="/Blog/libs/others/busuanzi.pure.mini.js"
+    ></script>
+        
+    <script
+      type="text/javascript"
+      color="0,0,255"
+      pointColor="0,0,255"
+      opacity="0.7"
+      zIndex="-1"
+      count="99"
+      src="/Blog/libs/background/canvas-nest.js"
+    ></script>
+      
+    <script
+      type="text/javascript"
+      size="150"
+      alpha="0.6"
+      zIndex="-1"
+      src="/Blog/libs/background/ribbon-refresh.min.js"
+      async="async"
+    ></script>
+     
+    <script
+      type="text/javascript"
+      src="/Blog/libs/background/ribbon-dynamic.js"
+      async="async"
+    ></script>
+     
+    <script
+      src="/Blog/libs/instantpage/instantpage.js"
+      type="module"
+    ></script>
     
-    <script src="/Blog/libs/others/clicklove.js" async="async"></script>
-    
-    
-    <script async src="/Blog/libs/others/busuanzi.pure.mini.js"></script>
-    
-
-    
-
-    
-
-	
-    
-    <script type="text/javascript" color="0,0,255"
-        pointColor="0,0,255" opacity='0.7'
-        zIndex="-1" count="99"
-        src="/Blog/libs/background/canvas-nest.js"></script>
-    
-
-    
-    
-    <script type="text/javascript" size="150" alpha='0.6'
-        zIndex="-1" src="/Blog/libs/background/ribbon-refresh.min.js" async="async"></script>
-    
-
-    
-    <script type="text/javascript" src="/Blog/libs/background/ribbon-dynamic.js" async="async"></script>
-    
-
-    
-    <script src="/Blog/libs/instantpage/instantpage.js" type="module"></script>
-    
-
-<script src="/Blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
-
+  <script src="/Blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
